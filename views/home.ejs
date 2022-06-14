@@ -1,0 +1,31 @@
+<%- include ('partials/header.ejs') -%>
+
+<div class="row mb-4">
+  <div class="col-md-8">
+    <div class="jumbotron bg-light">
+      <h1 class="title-blog">Hello, What are you thinking? </h1>
+      <p class="lead"> This a space to express your ideas. Anonymously. No Limits.</p>
+      <hr class="my-4">
+      <a class="btn btn-write" href="/compose"> Write something </a>
+    </div>
+  </div>
+  <div class="col-md-4 bg-light blogs">
+    <h2 class="subtitle-blog mt-4"> Lastest Blogs </h2>
+    <hr>
+    <% if(infoBlogs.length > 0){ %>
+      <% infoBlogs.forEach(function (post) { %>
+        <div class="data-blogs">
+          <h4> <%= post.title %> </h4>
+          <p> <%= (post.description).substring(0, 100)  %> ... 
+            <a href="/post/<%= post._id %>"> Read More</a>
+          </p>
+        </div>
+      <% }) %> 
+    <% } else { %>  
+      <p> No published blogs... </p>
+    <% } %>
+    
+</div>
+
+
+<%- include ('partials/footer.ejs') -%>

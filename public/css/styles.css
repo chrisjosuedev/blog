@@ -1,0 +1,88 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.items {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.navbar-nav  li a:hover {
+  color: #1abc9c !important;
+}
+
+.logo:hover {
+  color: #43e0c1 !important;
+}
+
+.btn-write {
+  border-color: #43e0c1; 
+  background-color: #43e0c1;
+  color: white;
+}
+
+.btn-write:hover {
+  border-color: #1abc9c;
+  background-color: #1abc9c;
+  color: white;
+}
+
+.btn-write:visited {
+  color: white;
+} 
+
+.data-blogs h4 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.data-blogs p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+.blogs {
+  border-radius: 8px;
+}
+
+.subtitle-blog, .title-blog, .post-blog {
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.subtitle-blog {
+  font-size: 24px;
+}
+
+footer {
+  padding: 40px 0;
+}
+
+footer a, a:visited {
+  color: #1abc9c ;
+} 
+
+footer a, a:hover {
+  color: #43e0c1;
+} 
+
+.text-footer {
+  font-size: 12px;
+  color: gray
+}
